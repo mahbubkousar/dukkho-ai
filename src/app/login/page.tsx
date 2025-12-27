@@ -60,7 +60,7 @@ export default function LoginPage() {
                 <div className="mt-12 text-center">
                     <p className="text-gray-400 text-sm font-body italic flex items-center justify-center gap-2">
                         <span className="text-2xl text-purple-200">❝</span>
-                        রোস্ট হতে প্রস্তুত হন।
+                        একদিন পৃথিবী ধ্বংস হবে
                         <span className="text-2xl text-purple-200">❞</span>
                     </p>
                 </div>
