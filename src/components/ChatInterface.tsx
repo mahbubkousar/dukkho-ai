@@ -217,7 +217,7 @@ export default function ChatInterface() {
     };
 
     return (
-        <div className="flex h-screen bg-gray-50 overflow-hidden">
+        <div className="flex h-[100dvh] bg-gray-50 overflow-hidden">
             {/* Sidebar */}
             <Sidebar
                 isOpen={isSidebarOpen}
@@ -236,7 +236,7 @@ export default function ChatInterface() {
             <div className="flex-1 flex flex-col h-full relative">
 
                 {/* Header */}
-                <header className="flex items-center justify-between p-4 bg-white/80 backdrop-blur-md border-b border-purple-100 absolute top-0 w-full z-10 shadow-sm">
+                <header className="flex-none flex items-center justify-between p-4 bg-white/80 backdrop-blur-md border-b border-purple-100 z-10 shadow-sm">
                     <div className="flex items-center gap-3">
                         <button
                             onClick={() => setIsSidebarOpen(true)}
@@ -256,7 +256,7 @@ export default function ChatInterface() {
                 </header>
 
                 {/* Messages */}
-                <div className="flex-1 overflow-y-auto pt-24 pb-24 px-4 md:px-10 scrollbar-thin scrollbar-thumb-purple-200 scrollbar-track-transparent">
+                <div className="flex-1 overflow-y-auto px-4 md:px-10 py-4 scrollbar-thin scrollbar-thumb-purple-200 scrollbar-track-transparent">
                     {messages.length === 0 ? (
                         <div className="flex flex-col items-center justify-center h-full text-gray-400 opacity-60 font-body animate-fade-in-up">
                             <div className="bg-white p-6 rounded-2xl shadow-sm border border-purple-50 text-center max-w-sm flex flex-col items-center">
@@ -278,7 +278,7 @@ export default function ChatInterface() {
                 </div>
 
                 {/* Input Area */}
-                <div className="absolute bottom-0 w-full bg-white/90 backdrop-blur-sm p-4 border-t border-purple-50 z-10">
+                <div className="flex-none w-full bg-white/90 backdrop-blur-sm p-4 border-t border-purple-50 z-10">
                     <div className="flex items-center gap-2 max-w-4xl mx-auto">
                         <input
                             type="text"
